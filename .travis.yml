@@ -14,8 +14,8 @@ install:
   # don't install PySide from pip otherwise it will try to compile the whole
   # thing and travis will time out the job
   # PySide
- - sudo apt-get install -qq python-pyside
- - ln -s /usr/lib/python$TRAVIS_PYTHON_VERSION/dist-packages/PySide /home/travis/virtualenv/python$TRAVIS_PYTHON_VERSION/lib/python$TRAVIS_PYTHON_VERSION/site-packages/PySide -v
+  - sudo apt-get install -qq python-pyside
+  - ln -s /usr/lib/python$TRAVIS_PYTHON_VERSION/dist-packages/PySide /home/travis/virtualenv/python$TRAVIS_PYTHON_VERSION/lib/python$TRAVIS_PYTHON_VERSION/site-packages/PySide -v
 
   # uninstall default travis pytest and install normal requirements
   - pip uninstall -y pytest
